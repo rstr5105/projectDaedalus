@@ -7,7 +7,7 @@
 2014 Republic of Badwater Games
 <br>
 http://www.badwatergames.com
-http://irc.badwatergames.com
+
 <br>
 <br>
 
