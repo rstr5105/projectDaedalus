@@ -13,7 +13,7 @@ public class Daedalus extends ApplicationAdapter {
 	
 	@Override
 	public void create () {
-		World world = new World(10,10); 
+		World world = new World(1024,1024); 
 		world.print();
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
