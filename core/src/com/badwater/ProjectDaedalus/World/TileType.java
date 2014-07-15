@@ -37,7 +37,7 @@ public enum TileType {
 				this.passable = passable;
 				this.speedmod = speedMod;
 				this.sType = sType;
-				this.tileImage = tileImage + sprite;
+				this.tileImage = sprite;
 				this.unitsInMe = new Unit[5];
 			
 			}

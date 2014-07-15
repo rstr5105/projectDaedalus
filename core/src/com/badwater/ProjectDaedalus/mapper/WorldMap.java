@@ -5,21 +5,20 @@
  */
 package com.badwater.ProjectDaedalus.mapper;
 
-import game.graphicsEngine.Sprite;
-import game.world.World;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badwater.ProjectDaedalus.World.*;
 
-import java.awt.Image;
-import java.awt.Point;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.awt.Point;
 
 import javax.swing.ImageIcon;
 
 
 public class WorldMap {
 	
-	private Image[][] tiles;
-	private LinkedList<Sprite> sprites;
 	private Point centerPoint;
 	
 	public WorldMap(World world, int height, int width){
@@ -27,7 +26,7 @@ public class WorldMap {
 		centerPoint.x = WorldMapRenderer.tilesToPixels(width) / 2;
 		centerPoint.y = WorldMapRenderer.tilesToPixels(height) / 2;
 		
-		tiles = new Image[height][width];
+		TextureAtlas tiles = new TextureAtlas(Gdx.files.internal("/data/images/tiles/Tiles.png"));
 		for(int y = 0; y < height; y++){
 			for (int x = 0; x < width; x++){
 				setTile(y, x, world.getTile(y, x).getImageIcon());
