@@ -1,4 +1,4 @@
-package com.project.ProjectDaedalus.helpers;
+package com.badwater.ProjectDaedalus.helpers;
 
 public class Helpers {
 	private static final int TILE_SIZE = 64;

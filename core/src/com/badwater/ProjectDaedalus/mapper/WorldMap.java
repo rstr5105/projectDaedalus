@@ -14,7 +14,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.awt.Point;
 
-import javax.swing.ImageIcon;
+import com.badwater.ProjectDaedalus.helpers.Helpers;
 
 
 public class WorldMap {
@@ -26,7 +26,7 @@ public class WorldMap {
 		centerPoint.x = WorldMapRenderer.tilesToPixels(width) / 2;
 		centerPoint.y = WorldMapRenderer.tilesToPixels(height) / 2;
 		
-		TextureAtlas tiles = new TextureAtlas(Gdx.files.internal("/data/images/tiles/Tiles.png"));
+		TextureAtlas tiles = new TextureAtlas(Gdx.files.internal("/data/images/tiles/Tiles.pack"));
 		for(int y = 0; y < height; y++){
 			for (int x = 0; x < width; x++){
 				setTile(y, x, world.getTile(y, x).getImageIcon());
